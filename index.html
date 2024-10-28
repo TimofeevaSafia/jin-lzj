@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+<script defer src="index.4cc95ce987ab5a575cf8.js"></script><link href="index.74508f5cbeb63de7b5a0.css" rel="stylesheet"></head>
+<body class="index">
+    <!-- <H1>тясицу—цифровое пространство 
+        для ценителей чайной культуры</H1>
+
+        <h2>разделы</h2>
+
+        <p><a href="teamap.html">чайная карта</a></p>
+        <p><a href="homemade.html">заварить дома</a></p>
+        <p><a href="ceremonies.html">церемонии</a></p>
+        <p><a href="architecture.html">архитектура</a></p>
+
+        <h2>подразделы</h2>
+
+        <p><a href="teamap/tags.html">теги</a></p>
+        <p><a href="homemade/recepies.html">рецепты</a></p>
+        <p><a href="ceremonies/context.html">контекст</a></p>
+        <p><a href="ceremonies/etiquette.html">этикет</a></p>
+        <p><a href="ceremonies/tableware.html">посуда</a></p>
+        <p><a href="architecture/countries.html">страны</a></p>
+        <p><a href="architecture/features.html">особенности</a></p>
+
+<form id="my-form" action="https://formspree.io/f/myzygbvq" method="POST">
+    <label>Email:</label>
+    <input type="email" name="email" />
+    <label>Message:</label>
+    <input type="text" name="message" />
+    <button id="my-form-button">Submit</button>
+    <p id="my-form-status"></p>
+  </form>
+  
+
+  <script>
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+  </script> -->
+
+  <nav>
+    <a href="about.html">о проекте</a>
+  </nav>
+
+  <div class="mainInfo">
+  <h1>привет! пока мы завариваем для тебя сайт,
+    можешь оставить свою почту, чтобы узнать 
+    о его готовности первым! </h1>
+  </div>
+
+  <form id="my-form" action="https://formspree.io/f/myzygbvq" method="POST"></form>
+    <input type="email" name="email" placeholder="введите почту"/>
+    <button id="my-form-button">отправить</button>
+    <p id="my-form-status"></p>
+  </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script>
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+  </script>
+        
+</body>
+</html>
